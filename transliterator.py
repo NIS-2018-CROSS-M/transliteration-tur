@@ -15,5 +15,5 @@ class Transliterator:
         for c in line:
             if c in self.src_to_tgt_chars_table.keys():
                 if self.src_to_tgt_chars_table[c] != '0':
-                    res.append(self.table[c])
+                    res.append(self.src_to_tgt_chars_table[c])
         return ''.join(res)
