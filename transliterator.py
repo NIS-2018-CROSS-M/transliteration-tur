@@ -1,6 +1,7 @@
 class Transliterator:
     src_to_tgt_chars_table = {}
     def __init__(self, transliteration_table_fn):
+        # transliteration_table_fn e.g. krc_transliteration in the repo
         self.src_to_tgt_chars_table = {}
         with open(transliteration_table_fn, 'r', encoding="utf-8") as table_f:
             for line in table_f:
